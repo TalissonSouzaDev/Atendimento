@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(24, 24, 77);
+}
+
+#conteudo {
+    margin-top: 100px;
+    padding-top: 100px;
+    margin-left: 30rem;
+    display: inline-block;
+    background: rgb(60, 60, 190);
+    width: 50vw;
+    height: 60vh;
+    border-radius: 7px 8px;
+    color: aliceblue;
+    text-align: center;
+}
+
+#conteudo h1 {
+    position: absolute;
+    top: 50px;
+    left: 21em;
+    font-size: 40px;
+}
+
+footer {
+    background: rgb(60, 60, 190);
+    margin-top: 80px;
+    height: 5vh;
+    text-align: center;
+    color: aliceblue;
+}
+
+.input {
+    border: 1px solid rgb(89, 89, 235);
+    border-radius: 3px 5px;
+    width: 200px;
+    height: 30px;
+    display: inline-block;
+    margin-top: 0px;
+}
+
+.posicao {
+    position: absolute;
+    top: 16em;
+    left: 55em;
+}
+
+button {
+    color: aliceblue;
+    background: none;
+    color: white;
+    border: 2px solid blue;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 3px 4px;
+}
+
+button:hover {
+    background: black;
+    border: none;
+}
+
+.texto {
+    position: relative;
+    right: 10em;
+    top: 3em;
+}
+
+.texto h3 {
+    font-size: 40px;
+}
+
+.texto p {
+    position: relative;
+    text-align: justify;
+    left: 5em;
+    top: 3em;
+}
+
+.texto h4 {
+    margin-top: 6em;
+}
+
+a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: aqua;
+}
+
+@media screen and (max-width:720px) {
+    #conteudo {
+        margin-left: 4rem;
+        width: 74vw;
+        height: 50vh;
+    }
+    #conteudo h1 {
+        top: 1em;
+        left: 3em;
+    }
+    .input {
+        width: 150px;
+        height: 30px;
+    }
+    .posicao {
+        position: absolute;
+        top: 10em;
+        left: 9em;
+    }
+    /* FINAL DO INDEX*/
+    .texto {
+        position: relative;
+        right: 4em;
+        top: 1em;
+    }
+    .texto h3 {
+        font-size: 20px;
+    }
+    .texto p {
+        position: relative;
+        left: 3em;
+        font-size: 15px;
+    }
+    a {
+        font-size: 20px;
+    }
+    footer {
+        margin-top: 30px;
+    }
+}
