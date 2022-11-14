@@ -9,7 +9,7 @@ session_start();
    
    <link rel="stylesheet" href="index.css">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculo atendimento</title>
 </head>
 <body>
     <div id="conteudo">
@@ -27,7 +27,7 @@ session_start();
         <strong>Inicio Do Intevalor: </strong><?php if(isset($_SESSION['intei'])){echo $_SESSION['intei'];}  ?><br>
         <strong>Final do Intevalor: </strong><?php if(isset($_SESSION['intef'])){echo $_SESSION['intef'];}  ?><br>
     </p>
-    <h4><strong>A Quantidade de atendimento por cada <?php if(isset($_SESSION['atendimento'])){echo $_SESSION['atendimento'];}?> minutos é <?php if(isset($_SESSION['total'])){echo $_SESSION['total'];} ?> </strong> Atendimento</h4><br>
+    <h4 class="res"><strong>A Quantidade de atendimento por cada <?php if(isset($_SESSION['atendimento'])){echo $_SESSION['atendimento'];}?> minutos é <?php if(isset($_SESSION['total'])){echo $_SESSION['total'];} ?> </strong> Atendimento</h4><br>
     <?php session_destroy(); ?>
     <a href="index.php">Novo Calculo</a>
         </div>

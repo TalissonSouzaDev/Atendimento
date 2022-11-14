@@ -1,38 +1,68 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background: rgb(24, 24, 77);
+    background: rgb(24, 24, 77,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+#conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+
+    background-color: rgb(153, 167, 167,0.9);
+    width: 80%;
+    height: 95vh;
+    margin-bottom: 15px;
+}
+#conteudo h1{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-#conteudo {
-    margin-top: 100px;
-    padding-top: 100px;
-    margin-left: 30rem;
-    display: inline-block;
-    background: rgb(60, 60, 190);
-    width: 50vw;
-    height: 60vh;
-    border-radius: 7px 8px;
-    color: aliceblue;
-    text-align: center;
-}
+.posicao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px auto;
+   }
 
-#conteudo h1 {
-    position: absolute;
-    top: 50px;
-    left: 21em;
-    font-size: 40px;
-}
+   .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px auto;
+    line-height: 50px;
+    color: azure;
+    font-size: 25px;
+   }
+
+  
+
+
+
 
 footer {
     background: rgb(60, 60, 190);
-    margin-top: 80px;
     height: 5vh;
     text-align: center;
     color: aliceblue;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .input {
@@ -44,16 +74,11 @@ footer {
     margin-top: 0px;
 }
 
-.posicao {
-    position: absolute;
-    top: 16em;
-    left: 55em;
-}
 
 button {
     color: aliceblue;
     background: none;
-    color: white;
+    color: rgb(46, 44, 44);
     border: 2px solid blue;
     width: 100px;
     height: 30px;
@@ -62,30 +87,11 @@ button {
 }
 
 button:hover {
-    background: black;
+    background: rgb(5, 15, 153);
+    color: white;
     border: none;
 }
 
-.texto {
-    position: relative;
-    right: 10em;
-    top: 3em;
-}
-
-.texto h3 {
-    font-size: 40px;
-}
-
-.texto p {
-    position: relative;
-    text-align: justify;
-    left: 5em;
-    top: 3em;
-}
-
-.texto h4 {
-    margin-top: 6em;
-}
 
 a {
     color: black;
@@ -99,41 +105,20 @@ a:hover {
 
 @media screen and (max-width:720px) {
     #conteudo {
-        margin-left: 4rem;
-        width: 74vw;
-        height: 50vh;
+        width: 80%;
+      
     }
-    #conteudo h1 {
-        top: 1em;
-        left: 3em;
-    }
+ 
     .input {
         width: 150px;
         height: 30px;
     }
-    .posicao {
-        position: absolute;
-        top: 10em;
-        left: 9em;
+    .res{
+        font-size: 12px;
+        color: azure;
+        text-align: center;
     }
-    /* FINAL DO INDEX*/
-    .texto {
-        position: relative;
-        right: 4em;
-        top: 1em;
-    }
-    .texto h3 {
-        font-size: 20px;
-    }
-    .texto p {
-        position: relative;
-        left: 3em;
-        font-size: 15px;
-    }
-    a {
-        font-size: 20px;
-    }
-    footer {
-        margin-top: 30px;
-    }
+
+ 
+   
 }
